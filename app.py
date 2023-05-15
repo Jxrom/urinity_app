@@ -22,7 +22,7 @@ def main():
         return prediction
 
     model = load_model()
-    class_names = ["High", "Moderate", "No Reducing Sugar", "Traceable"]
+    class_names =  ["High", "Moderate", "No reducing sugar", "Traceable"]
 
     st.write("# Glucose Level (Benedict Solution) Classifier")
    
