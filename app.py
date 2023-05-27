@@ -5,7 +5,7 @@ import numpy as np
 import cv2
 
 def main():
-    st.title("Urinalysis")
+    st.title("Urinity")
 
     @st.cache(allow_output_mutation=True)
     def load_model(model_name):
@@ -36,7 +36,7 @@ def main():
     model = load_model(selected_model)
     class_names = ["High", "Moderate", "No reducing sugar", "Traceable"]
 
-    st.write("# Glucose Level (Benedict Solution) Classifier")
+    st.write("### Benedict’s Reagent Classifier")
 
     file = st.file_uploader("Choose photo from computer", type=["jpg", "png", "jpeg"])
 
@@ -48,7 +48,7 @@ def main():
         prediction = import_and_predict(image, model)
         class_index = np.argmax(prediction)
         class_name = class_names[class_index]
-        string = "Glucose Level: " + class_name
+        string = "No Reducing Sugar Level: " + class_name
         st.success(string)
 
 if __name__ == "__main__":
