@@ -69,6 +69,10 @@ def display_about():
     st.write("##### Student, Technological Institute of the Philippines")
     st.write("Selwyn Landayan's passion for technology and desire to exert a positive influence on the field of computer engineering are what motivate him. He has a strong foundation of understanding and a constant desire to learn, which makes him willing to take on new challenges and participate in innovative endeavors.")
     
+    st.empty()
+    st.write("### Jerome Marbebe")
+    st.write("##### Student, Technological Institute of the Philippines")
+    st.write("Jerome Marbebe is a dedicated computer engineering student with a profound passion for programming, machine learning, deep learning, and computer networking. He possesses a strong foundation in computer science and is driven by his curiosity to explore the intersection of these dynamic fields.")
     
 if __name__ == "__main__":
     main()
