@@ -7,7 +7,7 @@ import cv2
 def main():
     img = Image.open("test-tube.png")
     st.set_page_config(page_title="Urinity App", page_icon=img)
-    #st.title("🧪Urinity App")
+    st.write("#🧪Urinity App")
 
     @st.cache(allow_output_mutation=True)
     def load_model(model_name):
