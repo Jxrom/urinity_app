@@ -45,12 +45,12 @@ def main():
         st.text("Please upload an image file")
     else:
         image = Image.open(file)
-        st.image(image, use_column_width=True)
         prediction = import_and_predict(image, model)
         class_index = np.argmax(prediction)
         class_name = class_names[class_index]
         string = "Reducing Sugar Level: " + class_name
         st.success(string)
+        st.image(image, use_column_width=True)
 
 if __name__ == "__main__":
     main()
