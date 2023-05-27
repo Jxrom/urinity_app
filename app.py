@@ -4,9 +4,6 @@ from PIL import Image, ImageOps
 import numpy as np
 
 def main():
-    img = Image.open("test-tube.png")
-    st.set_page_config(page_title="Urinity App", page_icon=img)
-
     st.write("# 🧪Urinity App")
     st.write("### Benedict’s Reagent Classifier")
     st.write("The Benedict's Reagent Classifier is a deep learning model that classifies images of Benedict's solution test tubes into different glucose concentration levels.")
@@ -76,6 +73,8 @@ def toggle_theme():
             st.session_state.theme = "light"
 
 if __name__ == "__main__":
+    img = Image.open("test-tube.png")
+    st.set_page_config(page_title="Urinity App", page_icon=img)
     st.session_state.theme = "light"
     toggle_theme()
     main()
