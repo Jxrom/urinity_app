@@ -8,6 +8,8 @@ def main():
     st.set_page_config(page_title="Urinity App", page_icon=img)
     st.write("# 🧪Urinity App")
     st.write("### Benedict’s Reagent Classifier")
+    st.write("The Benedict's Reagent Classifier is a deep learning model that classifies images of Benedict's solution test tubes into different glucose concentration levels.")
+    st.write("Benedict's Reagent Classifier automates and simplify the glucose level determination process using computer vision and machine learning techniques. By analyzing images of Benedict's solution test tubes, the classifier predicts the glucose concentration level, providing a quick and efficient method for analysis.")
 
     st.sidebar.title("Navigation")
     page = st.sidebar.radio("Go to", ("Home", "About"))
@@ -61,10 +63,8 @@ def display_home():
         st.image(image, use_column_width=True)
 
 def display_about():
-    st.write("# About")
-    st.write("The Benedict's Reagent Classifier is a deep learning model that classifies images of Benedict's solution test tubes into different glucose concentration levels.")
-
-    st.write("Benedict's Reagent Classifier automates and simplify the glucose level determination process using computer vision and machine learning techniques. By analyzing images of Benedict's solution test tubes, the classifier predicts the glucose concentration level, providing a quick and efficient method for analysis.")
+    st.write("# About Us")
+    
     
 if __name__ == "__main__":
     main()
