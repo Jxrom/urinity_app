@@ -5,8 +5,8 @@ import numpy as np
 import cv2
 
 def main():
-    st.set_page_config(page_title="Urinity App")
-    st.title("Urinity App")
+    st.set_page_config(page_tile="Urinity App, page_icon=🧪)
+    st.title("🧪Urinity App")
 
     @st.cache(allow_output_mutation=True)
     def load_model(model_name):
