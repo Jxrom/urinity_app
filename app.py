@@ -66,13 +66,27 @@ def display_about():
     st.write("# About Us")
 
 def toggle_theme():
-    if st.button("Toggle Theme"):
-        current_theme = st.get_theme()
-        if current_theme == "light":
-            new_theme = "dark"
-        else:
-            new_theme = "light"
-        st.set_theme(new_theme)
+    theme_toggle = st.button("Toggle Theme")
+    if theme_toggle:
+        current_theme = """
+            <style>
+            body {
+                background-color: #f5f5f5;
+                color: #000000;
+            }
+            </style>
+            """
+        st.markdown(current_theme, unsafe_allow_html=True)
+    else:
+        current_theme = """
+            <style>
+            body {
+                background-color: #222831;
+                color: #ffffff;
+            }
+            </style>
+            """
+        st.markdown(current_theme, unsafe_allow_html=True)
 
 if __name__ == "__main__":
     img = Image.open("test-tube.png")
