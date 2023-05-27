@@ -66,7 +66,7 @@ def display_about():
     st.write("# About Us")
     
     st.write("### Selwyn Landayan")
-    st.write("#### Student, Technological Institute of the Philippines")
+    st.write("##### Student, Technological Institute of the Philippines")
     st.write("Selwyn Landayan's passion for technology and desire to exert a positive influence on the field of computer engineering are what motivate him. He has a strong foundation of understanding and a constant desire to learn, which makes him willing to take on new challenges and participate in innovative endeavors.")
     
     
