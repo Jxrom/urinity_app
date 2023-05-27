@@ -12,7 +12,7 @@ def main():
     st.write("The Benedict's Reagent Classifier utilizes transfer learning techniques, specifically ResNet, MobileNet, InceptionV3, and VGG16, to automate and simplify the process of determining glucose levels. By analyzing images of Benedict's solution test tubes, the classifier predicts the concentration of glucose, offering a rapid and efficient method for analysis.")
 
     st.sidebar.title("Navigation")
-    page = st.sidebar.radio("Go to", ("Home", "About"))
+    page = st.sidebar.radio("Go to", ("Home", "About Us"))
 
     if page == "Home":
         display_home()
