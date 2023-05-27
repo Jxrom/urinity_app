@@ -5,7 +5,8 @@ import numpy as np
 import cv2
 
 def main():
-    st.set_page_config(page_tile="Urinity App, page_icon='🧪')
+    img = Image.open("test-tube.png")
+    st.set_page_config(page_tile="Urinity App, page_icon=img)
     st.title("🧪Urinity App")
 
     @st.cache(allow_output_mutation=True)
