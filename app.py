@@ -16,7 +16,7 @@ def main():
 
     if page == "Home":
         display_home()
-    elif page == "About":
+    elif page == "About Us":
         display_about()
 
 def display_home():
