@@ -62,10 +62,9 @@ def display_home():
 
 def display_about():
     st.write("# About")
-    st.write("The Benedict's Solution Classifier is a deep learning model that classifies images of Benedict's solution test tubes into different glucose concentration levels.")
+    st.write("The Benedict's Reagent Classifier is a deep learning model that classifies images of Benedict's solution test tubes into different glucose concentration levels.")
 
- 
-    st.write("The purpose of the Benedict's Solution Classifier is to automate and simplify the glucose level determination process using computer vision and machine learning techniques. By analyzing images of Benedict's solution test tubes, the classifier predicts the glucose concentration level, providing a quick and efficient method for analysis.")
+    st.write("Benedict's Reagent Classifier automates and simplify the glucose level determination process using computer vision and machine learning techniques. By analyzing images of Benedict's solution test tubes, the classifier predicts the glucose concentration level, providing a quick and efficient method for analysis.")
     
 if __name__ == "__main__":
     main()
