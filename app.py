@@ -6,10 +6,6 @@ import numpy as np
 def main():
     img = Image.open("test-tube.png")
     st.set_page_config(page_title="Urinity App", page_icon=img)
-    st.write("# 🧪Urinity App")
-    st.write("### Benedict’s Reagent Classifier")
-    st.write("The Benedict's Reagent Classifier is a deep learning model that classifies images of Benedict's solution test tubes into different glucose concentration levels.")
-    st.write("The Benedict's Reagent Classifier utilizes transfer learning techniques, specifically ResNet, MobileNet, InceptionV3, and VGG16, to automate and simplify the process of determining glucose levels. By analyzing images of Benedict's solution test tubes, the classifier predicts the concentration of glucose, offering a rapid and efficient method for analysis.")
 
     st.sidebar.title("Navigation")
     page = st.sidebar.radio("Go to", ("Home", "About Us"))
@@ -64,7 +60,18 @@ def display_home():
 
 def display_about():
     st.write("# About Us")
-    
-    
+
+def toggle_theme():
+    if st.button("Toggle Theme"):
+        if st.session_state.theme == "light":
+            st.set_theme("dark")
+            st.session_state.theme = "dark"
+        else:
+            st.set_theme("light")
+            st.session_state.theme = "light"
+
 if __name__ == "__main__":
+    st.session_state.theme = "light"
+    toggle_theme()
     main()
+
