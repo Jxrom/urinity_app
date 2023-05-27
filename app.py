@@ -36,7 +36,7 @@ def main():
     selected_model = st.selectbox("Select a model", model_names)
 
     model = load_model(selected_model)
-    class_names = [">2 g% High", "1.5-2 g% Moderate", "0 %g No reducing sugar", "0.5-1 g%Traceable"]
+    class_names = ["High (>2 g%)", "Moderate (1.5-2 g%)", "No reducing sugar (0 %g)", "Traceable (0.5-1 g%)"]
 
     st.write("### Benedict’s Reagent Classifier")
 
