@@ -5,6 +5,7 @@ import numpy as np
 import cv2
 
 def main():
+    st.set_page_config(page_title="Urinity App")
     st.title("Urinity App")
 
     @st.cache(allow_output_mutation=True)
