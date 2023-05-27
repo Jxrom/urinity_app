@@ -2,7 +2,6 @@ import streamlit as st
 import tensorflow as tf
 from PIL import Image, ImageOps
 import numpy as np
-import cv2
 
 def main():
     img = Image.open("test-tube.png")
@@ -10,16 +9,25 @@ def main():
     st.write("# 🧪Urinity App")
     st.write("### Benedict’s Reagent Classifier")
 
+    st.sidebar.title("Navigation")
+    page = st.sidebar.radio("Go to", ("Home", "About"))
+
+    if page == "Home":
+        display_home()
+    elif page == "About":
+        display_about()
+
+def display_home():
     @st.cache(allow_output_mutation=True)
     def load_model(model_name):
         if model_name == "VGG16":
             model = tf.keras.models.load_model('vgg16_urinalysis.hdf5')
         elif model_name == "ResNet50":
-            model = model = tf.keras.models.load_model('resnet_urinalysis.hdf5')
+            model = tf.keras.models.load_model('resnet_urinalysis.hdf5')
         elif model_name == "InceptionV3":
-            model = model = tf.keras.models.load_model('inceptionv3_urinalysis.hdf5')
+            model = tf.keras.models.load_model('inceptionv3_urinalysis.hdf5')
         elif model_name == "MobileNet":
-            model = model = tf.keras.models.load_model('mobilenet_urinalysis.hdf5')
+            model = tf.keras.models.load_model('mobilenet_urinalysis.hdf5')
         else:
             raise ValueError("Invalid model name")
         return model
@@ -38,7 +46,7 @@ def main():
 
     model = load_model(selected_model)
     class_names = ["High (>2 g%)", "Moderate (1.5-2 g%)", "No reducing sugar (0 %g)", "Traceable (0.5-1 g%)"]
-    
+
     file = st.file_uploader("Choose photo from computer", type=["jpg", "png", "jpeg"])
 
     if file is None:
@@ -51,6 +59,11 @@ def main():
         string = "Reducing Sugar Level: " + class_name
         st.success(string)
         st.image(image, use_column_width=True)
+
+def display_about():
+    st.write("# About")
+    st.write("This is the about page of the Urinity App.")
+    # Add more information or content about your app here
 
 if __name__ == "__main__":
     main()
