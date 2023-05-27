@@ -12,7 +12,7 @@ def main():
         if model_name == "VGG16":
             model = tf.keras.models.load_model('vgg16_urinalysis.hdf5')
         elif model_name == "ResNet50":
-            model = model = tf.keras.models.load_model('resnet50_urinalysis.hdf5')
+            model = model = tf.keras.models.load_model('resnet_urinalysis.hdf5')
         elif model_name == "InceptionV3":
             model = model = tf.keras.models.load_model('inceptionv3_urinalysis.hdf5')
         elif model_name == "MobileNet":
