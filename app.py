@@ -8,6 +8,7 @@ def main():
     img = Image.open("test-tube.png")
     st.set_page_config(page_title="Urinity App", page_icon=img)
     st.write("# 🧪Urinity App")
+    st.write("### Benedict’s Reagent Classifier")
 
     @st.cache(allow_output_mutation=True)
     def load_model(model_name):
@@ -37,9 +38,7 @@ def main():
 
     model = load_model(selected_model)
     class_names = ["High (>2 g%)", "Moderate (1.5-2 g%)", "No reducing sugar (0 %g)", "Traceable (0.5-1 g%)"]
-
-    st.write("### Benedict’s Reagent Classifier")
-
+    
     file = st.file_uploader("Choose photo from computer", type=["jpg", "png", "jpeg"])
 
     if file is None:
