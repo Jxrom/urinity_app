@@ -43,7 +43,7 @@ def display_home():
         prediction = model.predict(img_reshape)
         return prediction
 
-    model_names = ["VGG16", "ResNet50", "InceptionV3", "MobileNet"]
+    model_names = ["MobileNet", "ResNet50", "InceptionV3", "VGG16"]
     selected_model = st.selectbox("Select a model", model_names)
 
     model = load_model(selected_model)
