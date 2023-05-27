@@ -4,8 +4,7 @@ from PIL import Image, ImageOps
 import numpy as np
 
 def main():
-    img = Image.open("test-tube.png")
-    st.set_page_config(page_title="Urinity App", page_icon=img)
+    
 
     st.write("# 🧪Urinity App")
     st.write("### Benedict’s Reagent Classifier")
@@ -76,5 +75,7 @@ def toggle_theme():
         st.set_theme(new_theme)
 
 if __name__ == "__main__":
+    img = Image.open("test-tube.png")
+    st.set_page_config(page_title="Urinity App", page_icon=img)
     toggle_theme()
     main()
