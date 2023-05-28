@@ -74,5 +74,14 @@ def display_about():
     st.write("##### Student, Technological Institute of the Philippines")
     st.write("Jerome Marbebe is a dedicated computer engineering student with a profound passion for programming, machine learning, deep learning, and computer networking. He possesses a strong foundation in computer science and is driven by his curiosity to explore the intersection of these dynamic fields.")
     
+    st.empty()
+    st.write("### Sam Ryan Ruiz")
+    st.write("##### Student, Technological Institute of the Philippines")
+    st.write("Sam Ryan Ruiz is a highly motivated computer engineering student with a strong interest in technology and problem-solving. He has strong analytical abilities and a keen eye for detail, which enable him to excel at complex programming tasks. He thrives in collaborative settings, actively contributing ideas and working with peers to find creative solutions.")
+    
+    st.empty()
+    st.write("### Airo Cornillez")
+    st.write("##### Student, Technological Institute of the Philippines")
+    st.write("Airo Craven Cornillez. He is a student from the Technological Institute of the Philippines - Quezon City, taking a Bachelor of Science in Computer Engineering. He graduated from Senior High School at Our Lady of Fatima University - Antipolo Campus with a strand in Science, Technology, Engineering, and Mathematics (STEM).")
 if __name__ == "__main__":
     main()
