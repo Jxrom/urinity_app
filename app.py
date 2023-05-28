@@ -67,27 +67,22 @@ def display_about():
     
     st.empty()
     st.write("### Jenelle Kirsten Borja")
-    st.write("##### Student, Technological Institute of the Philippines")
     st.write("Jenelle Kirsten Borja is a computer engineering student who possesses a resolute determination to reach her goals and excel in her chosen field. With a passion for technology and a thirst for knowledge, she is driven to make a meaningful impact. Her determination to succeed is evident in her academic achievements. She consistently pushes herself to achieve academic excellence, embracing the challenges of rigorous coursework and constantly seeking opportunities to expand her knowledge and skills.")
     
     st.empty()
     st.write("### Airo Craven Cornillez")
-    st.write("##### Student, Technological Institute of the Philippines")
     st.write("Airo Craven Cornillez. He is a student from the Technological Institute of the Philippines - Quezon City, taking a Bachelor of Science in Computer Engineering. He graduated from Senior High School at Our Lady of Fatima University - Antipolo Campus with a strand in Science, Technology, Engineering, and Mathematics (STEM).")
     
     st.empty()
     st.write("### Jerome Marbebe")
-    st.write("##### Student, Technological Institute of the Philippines")
     st.write("Jerome Marbebe is a dedicated computer engineering student with a profound passion for programming, machine learning, deep learning, and computer networking. He possesses a strong foundation in computer science and is driven by his curiosity to explore the intersection of these dynamic fields.")
     
     st.empty()
     st.write("### Selwyn Landayan")
-    st.write("##### Student, Technological Institute of the Philippines")
     st.write("Selwyn Landayan's passion for technology and desire to exert a positive influence on the field of computer engineering are what motivate him. He has a strong foundation of understanding and a constant desire to learn, which makes him willing to take on new challenges and participate in innovative endeavors.")
     
     st.empty()
     st.write("### Sam Ryan Ruiz")
-    st.write("##### Student, Technological Institute of the Philippines")
     st.write("Sam Ryan Ruiz is a highly motivated computer engineering student with a strong interest in technology and problem-solving. He has strong analytical abilities and a keen eye for detail, which enable him to excel at complex programming tasks. He thrives in collaborative settings, actively contributing ideas and working with peers to find creative solutions.")
     
 if __name__ == "__main__":
